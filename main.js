@@ -6,7 +6,7 @@ let filmList = document.querySelector("#film-list")
 
 films.forEach((film) => {
     let listItem = document.createElement('li')
-    listItem.textContent = film.opening_crawl
+    listItem.textContent = film.title
     filmList.appendChild(listItem)
     console.log(film.title)
 })
