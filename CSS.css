@@ -69,6 +69,17 @@ nav ul li a:hover {
     margin: 40px 100px;
 }
 
+.film-list {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    overflow: hidden;
+    border: 5px black;
+    height: 220px;
+    width: 280px;
+    margin: 40px 100px;
+}
+
 #gravatar {
     width: 75%;
     height: 180px;
