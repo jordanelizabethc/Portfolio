@@ -11,4 +11,11 @@ films.forEach((film) => {
     console.log(film.title)
 })
 
-console.log(people[9])
+let peopleList = document.querySelector("#people-list")
+
+films.forEach((people) => {
+    let listItem = document.createElement('li')
+    listItem.textContent = people.name
+    peopleList.appendChild(listItem)
+    console.log(people[9])
+})
