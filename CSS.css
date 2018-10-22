@@ -67,9 +67,6 @@ nav ul li a:hover {
     height: 220px;
     width: 280px;
     margin: 40px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .film-list {
@@ -81,9 +78,6 @@ nav ul li a:hover {
     height: 220px;
     width: 280px;
     margin: 40px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #gravatar {
