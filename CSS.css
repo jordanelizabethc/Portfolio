@@ -50,13 +50,14 @@ nav ul li a:hover {
 #projects {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-#projects>div {
+
+/* #projects>div {
     margin: 20px;
     align-content: stretch;
-}
+} */
 
 .work-header {
     margin-top: 50px;
@@ -100,8 +101,8 @@ nav ul li a:hover {
 
 #gravatar {
     width: 75%;
-    height: 180px;
-    border-bottom: 2px solid black;
+    height: 200px;
+    border: 2px solid black;
 }
 
 .project-title {
