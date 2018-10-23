@@ -51,6 +51,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: top;
 }
 
 
@@ -68,13 +69,15 @@ nav ul li a:hover {
 #people-list li {
     list-style-type: none;
     background-color: black;
-    color: paleturquoise;
+    color: blue;
     width: 280px;
     margin: 10px 10px;
+    border: 2px solid blue;
 }
 
 #people-list li:hover {
-    background-color: darkgoldenrod;
+    background-color: white;
+    border: 2px solid salmon;
 }
 
 #film-list li {
@@ -82,6 +85,7 @@ nav ul li a:hover {
     background-color: powderblue;
     width: 280px;
     margin: 10px 10px;
+    border: 2px solid black;
 }
 
 #film-list li:hover {
