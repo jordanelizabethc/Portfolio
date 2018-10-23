@@ -23,9 +23,11 @@ films.forEach((film) => {
 
 let peopleList = document.querySelector("#people-list")
 
-people.forEach((people) => {
+let limitedPeople = people.slice(0, 15)
+
+limitedPeople.forEach((person) => {
     let listItem = document.createElement('li')
-    listItem.textContent = people.name
+    listItem.textContent = person.name
     peopleList.appendChild(listItem)
 })
 document.appendChild("<br>")
