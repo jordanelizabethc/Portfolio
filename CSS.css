@@ -48,8 +48,14 @@ nav ul li a:hover {
 }
 
 #projects {
-    padding-top: 80px;
-    margin-top: -80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#projects>div {
+    margin: 20px;
+    align-content: center;
 }
 
 .work-header {
@@ -64,17 +70,6 @@ nav ul li a:hover {
     display: inline-block;
     overflow: hidden;
     border: 5px black;
-    height: 220px;
-    width: 280px;
-    margin: 40px 100px;
-}
-
-.film-list {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    overflow: hidden;
-    border: 7px black;
     height: 220px;
     width: 280px;
     margin: 40px 100px;

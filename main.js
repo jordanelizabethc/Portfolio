@@ -11,11 +11,21 @@ films.forEach((film) => {
     console.log(film.title)
 })
 
+
+// let peopleList = document.querySelector("#people-list")
+// var i;
+// var listItem = "";
+// for (i = 0; i < 7; i++) {
+//     listItem = document.createElement('li');
+//     listItem.textContent = people.name;
+//     peopleList.appendChild(listItem);
+// }
+
 let peopleList = document.querySelector("#people-list")
 
-films.forEach((people) => {
+people.forEach((people) => {
     let listItem = document.createElement('li')
     listItem.textContent = people.name
     peopleList.appendChild(listItem)
-    console.log(people[9])
 })
+document.appendChild("<br>")
