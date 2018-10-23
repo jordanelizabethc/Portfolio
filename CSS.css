@@ -50,12 +50,12 @@ nav ul li a:hover {
 #projects {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #projects>div {
     margin: 20px;
-    align-content: center;
+    align-content: stretch;
 }
 
 .work-header {
