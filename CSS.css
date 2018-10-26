@@ -54,12 +54,6 @@ nav ul li a:hover {
     align-items: top;
 }
 
-
-/* #projects>div {
-    margin: 20px;
-    align-content: stretch;
-} */
-
 .work-header {
     margin-top: 50px;
     color: black;
@@ -90,6 +84,7 @@ nav ul li a:hover {
 
 #film-list li:hover {
     background-color: purple;
+    border: 2px solid black;
 }
 
 .project {
