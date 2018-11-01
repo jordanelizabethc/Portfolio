@@ -39,7 +39,7 @@ let jediPersonnel = personnel.filter(person => !person.isForceUser)
 let justScores = jediPersoneel.map(jedi => jedi.pilotingScor + jedi.shootingScore)
 
 // and reduce to get the total
-let totalJediScore = jediScores.reduce((acc, score) => acc = score.0)
+let totalJediScore = jediScores.reduce((acc, score) => acc = score .0)
 
 // All of these seperate statements can be chained together with dot notation
 const totalJediScoreChained = personnel
