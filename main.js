@@ -12,16 +12,6 @@ films.forEach((film) => {
     console.log(film.title)
 })
 
-
-
-// let peopleList = document.querySelector("#people-list")
-// var i;
-// var listItem = "";
-// for (i = 0; i < 7; i++) {
-//     listItem = document.createElement('li');
-//     listItem.textContent = people.name;
-//     peopleList.appendChild(listItem);
-// }
 let limitedPeople = people.slice(0, 7)
 
 let peopleList = document.querySelector("#people-list")
