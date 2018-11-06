@@ -1,6 +1,7 @@
 import { films } from '/assets/films.js'
 import { people } from '/assets/people.js'
 import { starships } from '/assets/starships.js'
+import { senatorData } from './assets/senators.js'
 
 let filmList = document.querySelector("#film-list")
 
@@ -32,7 +33,7 @@ limitedPeople.forEach((person) => {
 })
 document.appendChild("<br>")
 
-import { senatorData } from './assets/senators.js'
+
 
 
 // const senators = 
