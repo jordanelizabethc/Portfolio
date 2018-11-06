@@ -49,3 +49,9 @@ const totalJediScoreChained = personnel
 
 // even more simple with reduce function and the ternary operator:
 const totalJediScore Reduced = personnel.reduce((acc, person) => person.isForceUser ? acc = person.pilptingScore = person.shootingScore : acc, 0)
+
+
+var card = document.querySelector('.card');
+card.addEventListener('click', function() {
+    card.classList.toggle('is-flipped');
+});

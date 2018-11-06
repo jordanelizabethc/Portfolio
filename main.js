@@ -1,7 +1,7 @@
 import { films } from '/assets/films.js'
 import { people } from '/assets/people.js'
-import { starships } from '/assets/starships.js'
 import { senatorData } from './assets/senators.js'
+
 
 let filmList = document.querySelector("#film-list")
 
@@ -23,9 +23,6 @@ limitedPeople.forEach((person) => {
 })
 document.appendChild("<br>")
 
-
-
-
 // const senators = 
 console.log(senatorData.results[0].members)
 
@@ -45,3 +42,4 @@ const loyalRepublican = republicans.reduce((acc, senator) => senator.votes_with_
 console.log('There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate')
 
 console.log('The most loyal Republican is ${loyalRepublican.first_name} ${loyalRepublican.last_name} from ${loyalRepublican.state} who votes with republicans ${loyalRepublican.votes_with_party_pct}% of the time.')
+console
