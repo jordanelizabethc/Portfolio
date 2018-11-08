@@ -42,4 +42,3 @@ const loyalRepublican = republicans.reduce((acc, senator) => senator.votes_with_
 console.log('There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate')
 
 console.log('The most loyal Republican is ${loyalRepublican.first_name} ${loyalRepublican.last_name} from ${loyalRepublican.state} who votes with republicans ${loyalRepublican.votes_with_party_pct}% of the time.')
-console
