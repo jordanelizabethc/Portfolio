@@ -2,16 +2,19 @@
 
 <html>
 <div id="baseballcards" class="baseballcards">
-
     <h1>Baseball Cards</h1>
 
     <div class="scene scene--card">
         <div class="card">
-            <div class="card__face card__face--front">front</div>
-            <div class="card__face card__face--back">back</div>
+            <div class="card__face card__face--front"><img src="https://vignette.wikia.nocookie.net/starwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest?cb=20091030151422">
+            </div>
+            <div class="card__face card__face--back" id="card1">back
+
+            </div>
         </div>
     </div>
     <p>Click card to flip.</p>
+
     <style>
         .baseballcards {
             top: 0;
@@ -58,7 +61,8 @@
         }
         
         .card__face--front {
-            background: red;
+            width: 200px;
+            height: 260px;
         }
         
         .card__face--back {
@@ -66,11 +70,20 @@
             transform: rotateY(180deg);
         }
     </style>
+
+
     <script>
         var card = document.querySelector('.card');
         card.addEventListener('mouseover', function() {
             card.classList.toggle('is-flipped');
         });
+
+        // import {
+        //     people
+        // } from '/assets/people.js';
+
+        document.getElementById('card1').innerHTML = people.name[0] + "<br>" + people.height[0] + "<br>" + people.mass[0] + "<br>" +
+            people.hair_color[0] + "<br>" + peeople.skin_color[0] + "<br>" + people.birth_year[0] + "<br>" + people.gender[0]
     </script>
 
 </html>
