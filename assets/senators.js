@@ -1,4 +1,4 @@
-export const senatorData = {
+export const senatorData = [{
     "status": "OK",
     "copyright": " Copyright (c) 2018 Pro Publica Inc. All Rights Reserved.",
     "results": [{
@@ -4840,4 +4840,4 @@ export const senatorData = {
             }
         ]
     }]
-}
+}]
