@@ -8,7 +8,7 @@ let filmList = document.querySelector("#film-list")
 films.forEach((film) => {
     let listItem = document.createElement('li')
     listItem.textContent = film.title
-    filmList.appendChild(listItem)
+        // filmList.appendChild(listItem)
     console.log(film.title)
 })
 
@@ -47,6 +47,19 @@ console.log('The senator who is the most loyal to the democratic party is $ {mos
 console.log('There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate')
 
 const senWithPics = senators.map(senator => {
-    senator.imgURL = 'https://someurl/${senator.govtrack_id}'
+    senator.imgURL = 'https://someurl/${senator.govtrack_id}-200px.jpeg'
+    return senator
+})
+console.log(senWithPics)
+let pictureDiv = document.querySelector('.container')
 
+senWithPics.forEach(senator => {
+    let senatorPic = document.createElement('img')
+    let senatorFig = document.createElement('figure')
+    let senatorCap = document.createElement('figcaption')
+    senatorCap.textContent = '${senator.first_name} ${senator.last_name}'
+    senatorPic.src = senator.imgURL
+    senatorFig.appendChild(senatorFig)
+    senatorFig.appendChild(senatorCap)
+    pictureDiv.appendChild(senatorPic)
 })
