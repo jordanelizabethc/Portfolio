@@ -29,7 +29,8 @@ console.log(senatorData.results[0].members)
 
 const republicans = senators.filter(senator => senator.party === "R")
 
-const democrats = senators.filter(senators => senator.party === "D")
+
+const democrats = senators.filter(senator => senator.party === "D")
 
 const females = senators.filter(senator => senator.gender === 'F')
 
