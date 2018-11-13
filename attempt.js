@@ -31,7 +31,7 @@ const cardCreator = (person) => {
     let frontImg = document.createElement('img')
     frontImg.src = "https://vignette.wikia.nocookie.net/starwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest?cb=20091030151422"
     frontCard.appendChild(frontImg)
-    // now, add the front and back cards to the containing div
+        // now, add the front and back cards to the containing div
     cardDiv.appendChild(frontCard)
     cardDiv.appendChild(backCard)
     sceneDiv.appendChild(cardDiv)
@@ -46,11 +46,13 @@ people.forEach(element => cardCreator(element))
 //     card.classList.toggle('is-flipped');
 // });
 
-{/* <div class="card">
-<div class="card__face card__face--front"><img class="imagesize" src="https://vignette.wikia.nocookie.net/starwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest?cb=20091030151422">
-</div>
-<div class="card__face card__face--back" id="card1"></div>
-</div> */}
+{
+    /* <div class="card">
+    <div class="card__face card__face--front"><img class="imagesize" src="https://vignette.wikia.nocookie.net/starwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest?cb=20091030151422">
+    </div>
+    <div class="card__face card__face--back" id="card1"></div>
+    </div> */
+}
 
 // let limitedPeople = people.slice(0, 1)
 // let peopleList = document.querySelector("#card1")
