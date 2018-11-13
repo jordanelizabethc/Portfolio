@@ -14,28 +14,48 @@ const cardCreator = (person) => {
     let name = document.createElement('p')
     let height = document.createElement('p')
     let mass = document.createElement('p')
-    let hair_color = document.createElement('p')
+    let birth_year = document.createElement('p')
+    let gender = document.createElement('p')
     name.textContent = `Name: ${person.name}`
     height.textContent = `Height: ${person.height}`
     mass.textContent = `Mass: ${person.mass}`
-    hair_color.textContent = `Hair Color: ${person.hair_color}`
+    birth_year.textContent = `Birth Year: ${person.birth_year}`
+    gender.textContent = `Gender: ${person.gender}`
     backCard.appendChild(name)
     backCard.appendChild(height)
     backCard.appendChild(mass)
-    backCard.appendChild(hair_color)
-
+    backCard.appendChild(birth_year)
+    backCard.appendChild(gender)
     cardDiv.className = "card"
     frontCard.className = "card__face card__face--front"
     backCard.className = "card__face card__face--back"
     let frontImg = document.createElement('img')
     frontImg.src = "https://vignette.wikia.nocookie.net/starwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest?cb=20091030151422"
     frontCard.appendChild(frontImg)
-        // now, add the front and back cards to the containing div
+
+    // let capt = document.createElement('figcation')
+    // capt.textContent = people.name
+    // let backImg = document.createElement('figure')
+    // backImg.src = "https://lumiere-a.akamaihd.net/v1/images/og-generic_02031d2b.png?region=0%2C0%2C1200%2C1200"
+    // backCard.appendChild(backImg)
+    // now, add the front and back cards to the containing div
     cardDiv.appendChild(frontCard)
     cardDiv.appendChild(backCard)
     sceneDiv.appendChild(cardDiv)
     console.log(person.name)
 };
+
+// let backCard = document.createElement('figure')
+//   backCard.className = "card__face card__face--back"
+//   let capt = document.createElement('figcaption')
+//   let imag = document.createElement('img')
+
+//   imag.src = "images/PokemonLogo.png"
+//   capt.textContent = poke.ename
+//   cardBack.appendChild(capt)
+//   cardBack.appendChild(imag)
+
+
 
 people.forEach(element => cardCreator(element))
 
@@ -48,5 +68,6 @@ let newCard = {
 
 let createCard = document.querySelector('#createCard')
 createCard.addEventListener('click', () => {
-    return cardCreator(newCard)
-})
+        return cardCreator(newCard)
+    })
+    // $2a$10$zCbTbLvZcWcX/ZkfiIzhFOZfeF/dogIm6IVXaGcyNsFCwZI9YZPEe
