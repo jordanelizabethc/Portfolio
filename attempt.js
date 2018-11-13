@@ -60,10 +60,11 @@ const cardCreator = (person) => {
 people.forEach(element => cardCreator(element))
 
 let newCard = {
-    "name": "Thor Anderson",
-    "height": "200",
-    "mass": "100",
-    "hair_color": "brown",
+    "name": "Jordan Cecil",
+    "height": "71",
+    "mass": "70",
+    "birth_year": "1995",
+    "gender": "female",
 }
 
 let createCard = document.querySelector('#createCard')
