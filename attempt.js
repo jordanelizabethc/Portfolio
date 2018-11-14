@@ -33,11 +33,12 @@ const cardCreator = (person) => {
     frontImg.src = "https://vignette.wikia.nocookie.net/starwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest?cb=20091030151422"
     frontCard.appendChild(frontImg)
 
-    // let capt = document.createElement('figcation')
+    // let capt = document.createElement('figcaption')
     // capt.textContent = people.name
     // let backImg = document.createElement('figure')
     // backImg.src = "https://lumiere-a.akamaihd.net/v1/images/og-generic_02031d2b.png?region=0%2C0%2C1200%2C1200"
     // backCard.appendChild(backImg)
+
     // now, add the front and back cards to the containing div
     cardDiv.appendChild(frontCard)
     cardDiv.appendChild(backCard)
@@ -69,6 +70,5 @@ let newCard = {
 
 let createCard = document.querySelector('#createCard')
 createCard.addEventListener('click', () => {
-        return cardCreator(newCard)
-    })
-    // $2a$10$zCbTbLvZcWcX/ZkfiIzhFOZfeF/dogIm6IVXaGcyNsFCwZI9YZPEe
+    return cardCreator(newCard)
+})
