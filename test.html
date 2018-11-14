@@ -8,7 +8,12 @@
 </head>
 
 <body>
-    <h1>Baseball Cards</h1>
+    <nav>
+        <ul id='navbar'>
+            <li><a href="index.html">Back to Portfolio</a></li>
+
+        </ul>
+    </nav>
     <div id="main" class="cardflip">
 
         <div>
@@ -27,16 +32,29 @@
         <button id="createCard">Create Your Card</button>
 </body>
 <style>
+    nav ul li {
+        color: white;
+        display: inline-block;
+        margin: 55px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        font-size: x-large;
+    }
+    
+    nav ul li a:hover {
+        color: white;
+    }
+    
+    #navbar {
+        background: black;
+        text-align: right;
+    }
+    
     #main {
         background: black;
         padding-bottom: 160px;
-    }
-    
-    .baseballcards {
-        top: 0;
-        background: #ABF0FC;
-        min-height: 55vh;
-        padding-top: 45vh;
+        padding-top: 50px;
+        padding-left: 10px;
     }
     
     body {
@@ -47,12 +65,6 @@
         width: 200px;
         height: 260px;
     }
-    /* .scene {
-        width: 200px;
-        height: 260px;
-        margin: 40px;
-        perspective: 600px;
-    } */
     
     .scene {
         display: flex;
@@ -65,7 +77,6 @@
         transition: transform 1s;
         transform-style: preserve-3d;
         cursor: pointer;
-        position: relative;
     }
     
     .card.is-flipped {
