@@ -46,18 +46,6 @@ const cardCreator = (person) => {
     console.log(person.name)
 };
 
-// let backCard = document.createElement('figure')
-//   backCard.className = "card__face card__face--back"
-//   let capt = document.createElement('figcaption')
-//   let imag = document.createElement('img')
-
-//   imag.src = "images/PokemonLogo.png"
-//   capt.textContent = poke.ename
-//   cardBack.appendChild(capt)
-//   cardBack.appendChild(imag)
-
-
-
 people.forEach(element => cardCreator(element))
 
 let newCard = {
