@@ -1,5 +1,5 @@
 import { people } from '/assets/people.js';
-
+// C:\Users\Jordan\Desktop\Skwel\DGM1600\Portfolio\star-wars-guide\build\assets\img\characters
 
 let sceneDiv = document.querySelector('.scene')
 

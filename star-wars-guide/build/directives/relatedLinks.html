@@ -1,0 +1,46 @@
+<div flex-item>
+    <div class="card">
+        <div class="p+">
+            <strong class="fs-subhead display-block">{{header}}</strong>
+        </div>
+        <div class="divider divider--dark"></div>
+        <div ng-show='hasError' class='fs-subhead p+'>{{err}}</div>      
+        <div class='loading' ng-hide="loaded">
+            <lx-progress 
+                lx-type="circular" 
+                lx-color="red">
+            </lx-progress>
+            <span>Loading...</span>
+        </div>
+        <div ng-hide='hasData || !loaded' class='fs-subhead p+'>There are no related items for this category</div>
+        <div class="list p">
+            <div ng-repeat='item in chunk' class='list-item'>
+                <div class="link-icon">
+                    <img ng-src="{{item.img_url}}" width="40" height="40" class="img-round" onerror="this.src='./assets/img/placeholder-small.jpg'">
+                </div>
+                <div class="link-name">
+                    <a class='card-link' ng-href='{{item.url}}'>{{item.name}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="divider divider--dark" ng-hide='totalPages === 1 || !hasData'></div>
+        <div class='list-paginate'>
+            <button 
+                ng-click='loadPrevious()' 
+                ng-hide='currentPage === 1' 
+                class="btn btn--m btn--black btn--icon" 
+                lx-ripple>
+                <i class="mdi mdi-chevron-left"></i>
+            </button>
+            <span ng-show='currentPage === totalPages && totalPages > 1'>Previous</span>
+            <span ng-show='currentPage === 1 && totalPages > 1'>Next</span>
+            <button 
+                ng-click='loadNext()' 
+                ng-hide='currentPage === totalPages || !hasData' 
+                class="btn btn--m btn--black btn--icon" 
+                lx-ripple>
+                <i class="mdi mdi-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
