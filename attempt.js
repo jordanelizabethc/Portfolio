@@ -30,8 +30,12 @@ const cardCreator = (person) => {
     frontCard.className = "card__face card__face--front"
     backCard.className = "card__face card__face--back"
     let frontImg = document.createElement('img')
-    frontImg.src = "https://vignette.wikia.nocookie.net/starwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest?cb=20091030151422"
+        // let urlEnd = person.url.slice(person.url.length - 3)
+        // console.log(urlEnd)
+    frontImg.src = './characters/2.jpg'
     frontCard.appendChild(frontImg)
+
+    // "https://vignette.wikia.nocookie.net/starwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest?cb=20091030151422"
 
     // let capt = document.createElement('figcaption')
     // capt.textContent = people.name
