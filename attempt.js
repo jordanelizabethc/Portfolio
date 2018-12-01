@@ -1,5 +1,5 @@
 import { people } from '/assets/people.js';
-// C:\Users\Jordan\Desktop\Skwel\DGM1600\Portfolio\star-wars-guide\build\assets\img\characters
+
 
 let sceneDiv = document.querySelector('.scene')
 
@@ -35,13 +35,6 @@ const cardCreator = (person) => {
     frontImg.src = `./characters/${characterNumber}.jpg`
     frontCard.appendChild(frontImg)
 
-    // "https://vignette.wikia.nocookie.net/starwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest?cb=20091030151422"
-
-    // let capt = document.createElement('figcaption')
-    // capt.textContent = people.name
-    // let backImg = document.createElement('figure')
-    // backImg.src = "https://lumiere-a.akamaihd.net/v1/images/og-generic_02031d2b.png?region=0%2C0%2C1200%2C1200"
-    // backCard.appendChild(backImg)
 
     // now, add the front and back cards to the containing div
     cardDiv.appendChild(frontCard)
