@@ -4,13 +4,15 @@
 
 
 <head>
+
+    <link rel="stylesheet" href="cardcss.css">
     <title>Baseball Cards Page</title>
 </head>
 
 <body>
     <nav>
         <ul id='navbar'>
-            <li><a href="index.html">Back to Portfolio</a></li>
+            <li><a href="index.html">BACK TO PORTFOLIO</a></li>
 
         </ul>
     </nav>
@@ -27,99 +29,7 @@
 
         <button id="createCard">Create Your Card</button>
 </body>
-<style>
-    nav ul li {
-        color: white;
-        display: inline-block;
-        margin: 55px;
-        margin-bottom: 25px;
-        margin-top: 25px;
-        font-size: x-large;
-    }
-    
-    nav ul li a:hover {
-        color: white;
-    }
-    
-    #navbar {
-        background: black;
-        text-align: right;
-    }
-    
-    #main {
-        background: black;
-        padding-bottom: 160px;
-        padding-top: 50px;
-        padding-left: 10px;
-    }
-    
-    body {
-        font-family: sans-serif;
-    }
-    
-    .imagesize {
-        width: 200px;
-        height: 260px;
-    }
-    
-    .scene {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .card {
-        width: 220px;
-        height: 280px;
-        transition: transform 1s;
-        transform-style: preserve-3d;
-        cursor: pointer;
-    }
-    
-    .card.is-flipped {
-        transform: rotateY(180deg);
-    }
-    
-    .card__face {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        line-height: 15px;
-        color: white;
-        text-align: left;
-        font-weight: bold;
-        font-size: 10px;
-        backface-visibility: hidden;
-    }
-    
-    img {
-        width: 200px;
-        height: 260px;
-    }
-    
-    .card__face--front {
-        width: 200px;
-        height: 260px;
-    }
-    
-    img {
-        width: 200px;
-        height: 260px;
-    }
-    
-    .card__face--back {
-        font-size: large;
-        transform: rotateY(180deg);
-        width: 200px;
-        height: 260px;
-        background-image: url('https://image.shutterstock.com/image-illustration/black-space-many-stars-seamless-260nw-172513382.jpg');
-    }
-    
-    #createCard {
-        width: 200px;
-        height: 60px;
-        margin: 20px;
-    }
-</style>
+
 
 <script type='module' src="attempt.js"></script>
 

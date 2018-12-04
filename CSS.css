@@ -35,8 +35,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #384e1d;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -44,7 +45,7 @@ nav ul li a:hover {
 }
 
 #navbar {
-    background: black;
+    background: #c6c386;
 }
 
 #projects {
@@ -62,11 +63,11 @@ nav ul li a:hover {
 
 #people-list li {
     list-style-type: none;
-    background-color: black;
-    color: blue;
+    background-color: #c6c386;
+    color: #384e1d;
     width: 280px;
     margin: 10px 10px;
-    border: 2px solid blue;
+    border: 2px solid#384e1d;
 }
 
 #people-list li:hover {
@@ -83,7 +84,7 @@ nav ul li a:hover {
 }
 
 #film-list li:hover {
-    background-color: purple;
+    background-color: white;
     border: 2px solid black;
 }
 
@@ -121,7 +122,7 @@ nav ul li a:hover {
 }
 
 .contact {
-    background: #FAC0B3;
+    background: #384e1d;
     padding-bottom: 160px;
 }
 

@@ -1,0 +1,109 @@
+body {
+    background-color: red;
+    font-family: 'Impact', arvo;
+}
+
+
+/* NAVBAR */
+
+nav ul {
+    text-align: right;
+    position: relative;
+    width: 100%;
+    background-color: #e0ebe8;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 55px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: x-large;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+#navbar {
+    background: black;
+    text-align: left;
+}
+
+#main {
+    background: black;
+    padding-bottom: 160px;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+
+/* CARD */
+
+.imagesize {
+    width: 200px;
+    height: 260px;
+}
+
+.scene {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    height: 280px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 15px;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 10px;
+    backface-visibility: hidden;
+}
+
+img {
+    width: 200px;
+    height: 260px;
+}
+
+.card__face--front {
+    width: 200px;
+    height: 260px;
+}
+
+img {
+    width: 200px;
+    height: 260px;
+}
+
+.card__face--back {
+    font-size: large;
+    transform: rotateY(180deg);
+    width: 200px;
+    height: 260px;
+    background-image: url('https://image.shutterstock.com/image-illustration/black-space-many-stars-seamless-260nw-172513382.jpg');
+}
+
+#createCard {
+    width: 200px;
+    height: 60px;
+    margin: 20px;
+}
