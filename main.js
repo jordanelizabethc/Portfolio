@@ -2,7 +2,7 @@ import { films } from '/assets/films.js'
 import { people } from '/assets/people.js'
 import { senatorData } from './assets/senators.js'
 
-
+// People Info
 let filmList = document.querySelector("#film-list")
 
 films.forEach((film) => {
@@ -22,7 +22,7 @@ limitedPeople.forEach((person) => {
     peopleList.appendChild(listItem)
 })
 
-
+// Senator Info
 const senators = senatorData.results[0].members
 
 console.log(senators)
