@@ -1,6 +1,6 @@
 body {
     background-color: red;
-    font-family: 'Impact', arvo;
+    font-family: 'Times New Roman', arvo;
 }
 
 
@@ -24,6 +24,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-family: 'Impact', arvo;
 }
 
 nav ul li a:hover {
@@ -38,8 +39,8 @@ nav ul li a:hover {
 #main {
     background: black;
     padding-bottom: 160px;
-    padding-top: 50px;
-    padding-left: 10px;
+    padding-top: 30px;
+    padding-left: 13px;
 }
 
 
