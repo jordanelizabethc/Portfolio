@@ -5,7 +5,6 @@ const senators = senatorData.results[0].members
 
 console.log(senators)
 
-
 const republicans = senators.filter(senator => senator.party === "R")
 const democrats = senators.filter(senator => senator.party === "D")
 
@@ -29,6 +28,7 @@ const senWithPics = senators.map(senator => {
     return senator
 })
 console.log(senWithPics)
+
 let pictureDiv = document.querySelector('.container')
 
 senWithPics.forEach(senator => {
