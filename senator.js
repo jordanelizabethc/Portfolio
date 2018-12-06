@@ -1,7 +1,7 @@
 import { senatorData } from './assets/senators.js'
 
 // Senator Info
-const senators = senatorData.results[0].members
+const senators = senatorData[0].results[0].members
 
 console.log(senators)
 
@@ -26,7 +26,7 @@ console.log('There are ${republicans.length} republicans and ${democrats.length}
 // SENATOR PICTURES
 
 const senWithPics = senators.map(senator => {
-        senator.imgURL = 'https://someurl/${senator.govtrack_id}-200px.jpeg'
+        senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
         return senator
     })
     // console.log(senWithPics)
@@ -39,7 +39,7 @@ senWithPics.forEach(senator => {
     let senatorCap = document.createElement('figcaption')
     senatorCap.textContent = '${senator.first_name} ${senator.last_name}'
     senatorPic.src = senator.imgURL
-    senatorFig.appendChild(senatorFig)
+    senatorFig.appendChild(senatorPic)
     senatorFig.appendChild(senatorCap)
     pictureDiv.appendChild(senatorPic)
 })

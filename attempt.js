@@ -52,6 +52,7 @@ let newCard = {
     "mass": "70",
     "birth_year": "1995",
     "gender": "female",
+    "url": "https://swapi.co/api/people/89/"
 }
 
 let createCard = document.querySelector('#createCard')
