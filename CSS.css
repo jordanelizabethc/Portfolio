@@ -20,6 +20,9 @@ body {
     color: black;
 }
 
+
+/* NAVBAR */
+
 nav ul {
     text-align: right;
     position: fixed;
@@ -61,6 +64,9 @@ nav ul li a:hover {
     font-weight: normal;
 }
 
+
+/* PEOPLE LIST */
+
 #people-list li {
     list-style-type: none;
     background-color: #c6c386;
@@ -75,6 +81,9 @@ nav ul li a:hover {
     border: 2px solid salmon;
 }
 
+
+/* FILM LIST */
+
 #film-list li {
     list-style-type: none;
     background-color: powderblue;
@@ -87,6 +96,9 @@ nav ul li a:hover {
     background-color: white;
     border: 2px solid black;
 }
+
+
+/* DIV PROJECT */
 
 .project {
     text-decoration: none;
@@ -121,6 +133,9 @@ nav ul li a:hover {
     }
 }
 
+
+/* CONTACT DIV */
+
 .contact {
     background: #384e1d;
     padding-bottom: 160px;
@@ -150,7 +165,7 @@ nav ul li a:hover {
     color: #BFFCAB;
 }
 
-footer {
+FOOTER footer {
     padding: 8px;
     background: gray;
     color: white;

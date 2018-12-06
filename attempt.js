@@ -3,6 +3,7 @@ import { people } from '/assets/people.js';
 
 let sceneDiv = document.querySelector('.scene')
 
+// FRONT IMAGE BACK INFO
 const cardCreator = (person) => {
     let cardDiv = document.createElement('div')
     cardDiv.addEventListener('click', function() {
