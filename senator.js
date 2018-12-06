@@ -23,11 +23,13 @@ console.log('The senator who is the most loyal to the democratic party is $ {mos
 
 console.log('There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate')
 
+// SENATOR PICTURES
+
 const senWithPics = senators.map(senator => {
-    senator.imgURL = 'https://someurl/${senator.govtrack_id}-200px.jpeg'
-    return senator
-})
-console.log(senWithPics)
+        senator.imgURL = 'https://someurl/${senator.govtrack_id}-200px.jpeg'
+        return senator
+    })
+    // console.log(senWithPics)
 
 let pictureDiv = document.querySelector('.container')
 
