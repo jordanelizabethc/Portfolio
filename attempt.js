@@ -46,6 +46,16 @@ const cardCreator = (person) => {
 
 people.forEach(element => cardCreator(element))
 
+function OneNewCard(name, height, mass, birth_year, gender, picture) {
+    this.name = name,
+        this.height = height,
+        this.mass = mass,
+        this.birth_year = birth_year,
+        this.gender = gender,
+        this.picture = picture
+}
+new OneNewCard("Jordan", "72", "71", "female", "https://swapi.co/api/people/89/")
+
 let newCard = {
     "name": "Jordan Cecil",
     "height": "71",
@@ -57,5 +67,5 @@ let newCard = {
 
 let createCard = document.querySelector('#createCard')
 createCard.addEventListener('click', () => {
-    return cardCreator(newCard)
+    return cardCreator(new OneNewCard("Jordan", "72", "71", "female", "https://swapi.co/api/people/89/"))
 })
