@@ -2,7 +2,6 @@ import { senatorData } from './assets/senators.js'
 
 // Senator Info
 
-
 const senators = senatorData[0].results[0].members
 
 console.log(senators)
@@ -38,64 +37,75 @@ const senWithPics = senators.map(senator => {
 let pictureDiv = document.querySelector('.container')
 
 senWithPics.forEach(senator => {
+    let senatorPic = document.createElement('img')
+    let senatorFig = document.createElement('figure')
+    let senatorCap = document.createElement('figcaption')
+    senatorCap.textContent = '${senator.first_name} ${senator.last_name}'
+    senatorPic.src = senator.imgURL
+    senatorFig.appendChild(senatorPic)
+    senatorFig.appendChild(senatorCap)
+    pictureDiv.appendChild(senatorPic)
+})
 
-        let frontCard = document.createElement('div')
-        let backCard = document.createElement('div')
-            // frontImg.src = senator.imgURL
-        frontCard.appendChild(frontImg)
-        let senatorPic = document.createElement('img')
-        let senatorFig = document.createElement('figure')
-        let senatorCap = document.createElement('figcaption')
-        senatorCap.textContent = '${senator.first_name} ${senator.last_name}'
-        senatorPic.src = senator.imgURL
-        senatorFig.appendChild(senatorPic)
-        senatorFig.appendChild(senatorCap)
-        pictureDiv.appendChild(senatorPic)
-    })
-    // let createElement = document.createElement('p')
-    // createElement.textContent = "hi"
-    // parentnode.appendChild(createElement)
-function CardCreator(senatemember) {
 
-}
+//CREATE SENATOR CARD
 
-const cardCreator = (senators) => {
-        //delete old cards
-        while (pictureDiv.firstChild)(
-            pictureDiv.removeChild(pictureDiv.firstChild)
-        )
 
-        let cardDiv = document.createElement('div')
-        cardDiv.addEventListener('click', function() {
-            cardDiv.classList.toggle('is-flipped');
-        })
-        let frontCard = document.createElement('div')
-        let backCard = document.createElement('div')
-        let firstname = document.createElement('p')
-        firstname.textContent = `Name: senators ${first_name}`
-        height.textContent = `Height: ${person.height}`
-        mass.textContent = `Mass: ${person.mass}`
-        birth_year.textContent = `Birth Year: ${person.birth_year}`
-        gender.textContent = `Gender: ${person.gender}`
-        backCard.appendChild(name)
-        backCard.appendChild(height)
-        backCard.appendChild(mass)
-        backCard.appendChild(birth_year)
-        backCard.appendChild(gender)
-        cardDiv.className = "card"
-        frontCard.className = "card__face card__face--front"
-        backCard.className = "card__face card__face--back"
-        let frontImg = document.createElement('img')
-        frontImg.src = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
-        frontCard.appendChild(frontImg)
-            //Sort by Party
-        let filteredByParty = senators.filter(senator => senator.party === party)
 
-        filteredByParty.forEach(senator => {
-            createCard(senator)
-        })
-    }
-    // let houses = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"]
+
+
+
+
+
+
+
+// let createElement = document.createElement('p')
+// createElement.textContent = "hi"
+// parentnode.appendChild(createElement)
+// function CardCreator(senatemember) {
+
+// }
+
+// const cardCreator = (senators) => {
+//     //delete old cards
+//     while (pictureDiv.firstChild)(
+//         pictureDiv.removeChild(pictureDiv.firstChild)
+//     )
+
+//     let cardDiv = document.createElement('div')
+//     cardDiv.addEventListener('click', function() {
+//         cardDiv.classList.toggle('is-flipped');
+//     })
+//     let frontCard = document.createElement('div')
+//     let backCard = document.createElement('div')
+//     let firstname = document.createElement('p')
+//     firstname.textContent = `Name: senators ${first_name}`
+//     height.textContent = `Height: ${person.height}`
+//     mass.textContent = `Mass: ${person.mass}`
+//     birth_year.textContent = `Birth Year: ${person.birth_year}`
+//     gender.textContent = `Gender: ${person.gender}`
+//     backCard.appendChild(name)
+//     backCard.appendChild(height)
+//     backCard.appendChild(mass)
+//     backCard.appendChild(birth_year)
+//     backCard.appendChild(gender)
+//     cardDiv.className = "card"
+//     frontCard.className = "card__face card__face--front"
+//     backCard.className = "card__face card__face--back"
+//     let frontImg = document.createElement('img')
+//     frontImg.src = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
+//     frontCard.appendChild(frontImg)
+//         //Sort by Party
+//     let filteredByParty = senators.filter(senator => senator.party === party)
+
+//     filteredByParty.forEach(senator => {
+//         createCard(senator)
+//     })
+// }
+
+
+//EXAMPLE HP CODE
+// let houses = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"]
 
 // let sortByHouse = () => {
 //     removeCards()
@@ -116,6 +126,7 @@ const cardCreator = (senators) => {
 // }
 
 // HouseButton.addEventListener("click", sortByHouse)
+
 // CSS makes card back color
 // .Gryffindor {
 //     background-color: #d84e3f;
