@@ -49,7 +49,7 @@ people.forEach(element => cardCreator(element))
 
 let newCard = {
     "name": "Jordan Cecil",
-    "height": "71",
+    "height": "180",
     "mass": "70",
     "birth_year": "1995",
     "gender": "female",
