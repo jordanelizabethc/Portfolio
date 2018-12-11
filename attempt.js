@@ -69,17 +69,3 @@ createCard.addEventListener('click', () => {
     //         this.picture = picture
     // }
     // new OneNewCard("Jordan", "72", "71", "female", "https://swapi.co/api/people/89/")
-
-// let newCard = {
-//     "name": "Jordan Cecil",
-//     "height": "71",
-//     "mass": "70",
-//     "birth_year": "1995",
-//     "gender": "female",
-//     "url": "https://swapi.co/api/people/89/"
-// }
-
-// let createCard = document.querySelector('#createCard')
-// createCard.addEventListener('click', () => {
-//     return cardCreator(new OneNewCard("Jordan", "72", "71", "female", "https://swapi.co/api/people/89/"))
-// })
