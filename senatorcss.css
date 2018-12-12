@@ -83,7 +83,6 @@ nav ul li a:hover {
 img {
     width: 200px;
     height: 260px;
-    /* border: #384e1d solid 5px; */
     border-radius: 1rem;
 }
 
@@ -102,7 +101,6 @@ img {
     transform: rotateY(180deg);
     width: 200px;
     height: 260px;
-    /* border: #384e1d solid 5px; */
     border-radius: 1rem;
 }
 

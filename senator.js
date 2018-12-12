@@ -48,9 +48,12 @@ senWithPics.forEach(senator => {
     let name = document.createElement('p')
     let gender = document.createElement('p')
     let party = document.createElement('p')
+        // let displayName = document.createElement('p')
+        // displayName.textContent = `${senator.first_name} ${senator.last_name}`
     name.textContent = `Name: ${senator.first_name} ${senator.last_name}`
     gender.textContent = `Gender: ${senator.gender}`
     party.textContent = `Party: ${senator.party}`
+        // frontCard.appendChild(displayName)
     backCard.appendChild(name)
     backCard.appendChild(gender)
     backCard.appendChild(party)
@@ -61,8 +64,15 @@ senWithPics.forEach(senator => {
     frontImg.src = senator.imgURL
     frontCard.appendChild(frontImg)
     if (senator.party === `R`) {
-        frontImg.style.borderColor = "red";
+        frontImg.style.border = "thick solid red";
+    } else if (senator.party === `D`) {
+        frontImg.style.border = "thick solid blue";
+    } else {
+        frontImg.style.border = "thick solid green"
     }
+
+
+
     if (senator.party === `R`) {
         backCard.style.backgroundColor = "red"
     } else if (senator.party === `D`) {
