@@ -8,25 +8,25 @@ const senators = senatorData[0].results[0].members
 
 // console.log(senators)
 
-// const republicans = senators.filter(senator => senator.party === "R")
-// const democrats = senators.filter(senator => senator.party === "D")
+const republicans = senators.filter(senator => senator.party === "R")
+const democrats = senators.filter(senator => senator.party === "D")
 
-// const maleSenators = senators.filter(senator => senator.gender === 'M')
+const maleSenators = senators.filter(senator => senator.gender === 'M')
 
-// const femaleSenators = senators.filter(senator => senator.gender === 'F')
+const femaleSenators = senators.filter(senator => senator.gender === 'F')
 
-// const mostLoyalRepublican = republicans.reduce((acc, senator) => senator.votes_with_party_pct > 0 ? senator : acc, 0)
+const mostLoyalRepublican = republicans.reduce((acc, senator) => senator.votes_with_party_pct > 0 ? senator : acc, 0)
 
-// const mostLoyalDemocrat = democrats.reduce((acc, senator) => senator.votes_with_party_pct > 0 ? senator : acc, 0)
+const mostLoyalDemocrat = democrats.reduce((acc, senator) => senator.votes_with_party_pct > 0 ? senator : acc, 0)
 
-// console.log(`The senator who is the most loyal to the republican party is $ ${mostLoyalRepublican.first_name} ${mostLoyalRepublican.last_name} from ${mostLoyalRepublican.state} who votes with republicans ${mostLoyalRepublican.votes_with_party_pct}% of the time`)
+console.log(`The senator who is the most loyal to the republican party is $ ${mostLoyalRepublican.first_name} ${mostLoyalRepublican.last_name} from ${mostLoyalRepublican.state} who votes with republicans ${mostLoyalRepublican.votes_with_party_pct}% of the time`)
 
-// console.log(`The senator who is the most loyal to the democratic party is $ ${mostLoyalDemocrat.first_name} ${mostLoyalDemocrat.last_name} from ${mostLoyalDemocrat.state} who votes with republicans ${mostLoyalDemocrat.votes_with_party_pct}% of the time`)
+console.log(`The senator who is the most loyal to the democratic party is $ ${mostLoyalDemocrat.first_name} ${mostLoyalDemocrat.last_name} from ${mostLoyalDemocrat.state} who votes with republicans ${mostLoyalDemocrat.votes_with_party_pct}% of the time`)
 
 
-// console.log(`There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate`)
-// console.log(maleSenators)
-// console.log(femaleSenators)
+console.log(`There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate`)
+console.log(maleSenators)
+console.log(femaleSenators)
 
 // SENATOR CARD
 
@@ -60,6 +60,16 @@ senWithPics.forEach(senator => {
     let frontImg = document.createElement('img')
     frontImg.src = senator.imgURL
     frontCard.appendChild(frontImg)
+    if (senator.party === `R`) {
+        frontImg.style.borderColor = "red";
+    }
+    if (senator.party === `R`) {
+        backCard.style.backgroundColor = "red"
+    } else if (senator.party === `D`) {
+        backCard.style.backgroundColor = "blue"
+    } else {
+        backCard.style.backgroundColor = "#384e1d"
+    }
 
 
     // now, add the front and back cards to the containing div
