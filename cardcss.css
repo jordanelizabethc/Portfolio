@@ -83,6 +83,8 @@ nav ul li a:hover {
 img {
     width: 200px;
     height: 260px;
+    border: red solid 5px;
+    border-radius: 1rem;
 }
 
 .card__face--front {
@@ -101,6 +103,8 @@ img {
     width: 200px;
     height: 260px;
     background-image: url('https://image.shutterstock.com/image-illustration/black-space-many-stars-seamless-260nw-172513382.jpg');
+    border: red solid 5px;
+    border-radius: 1rem;
 }
 
 #createCard {
