@@ -11,7 +11,6 @@ const cardCreator = (person) => {
     })
     let frontCard = document.createElement('div')
     let backCard = document.createElement('div')
-
     let name = document.createElement('p')
     let height = document.createElement('p')
     let mass = document.createElement('p')

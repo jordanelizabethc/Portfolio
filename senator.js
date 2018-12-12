@@ -1,5 +1,7 @@
 import { senatorData } from './assets/senators.js'
 
+// let pictureDiv = document.querySelector('.container')
+
 // Senator Info
 
 const senators = senatorData[0].results[0].members
@@ -34,19 +36,39 @@ const senWithPics = senators.map(senator => {
     })
     // console.log(senWithPics)
 
-let pictureDiv = document.querySelector('.container')
+let pictureDiv = document.querySelector('.scene')
 
 senWithPics.forEach(senator => {
-    let senatorPic = document.createElement('img')
-    let senatorFig = document.createElement('figure')
-    let senatorCap = document.createElement('figcaption')
-    senatorCap.textContent = '${senator.first_name} ${senator.last_name}'
-    senatorPic.src = senator.imgURL
-    senatorFig.appendChild(senatorPic)
-    senatorFig.appendChild(senatorCap)
-    pictureDiv.appendChild(senatorPic)
-})
+    let cardDiv = document.createElement('div')
+    cardDiv.addEventListener('click', function() {
+        cardDiv.classList.toggle('is-flipped');
+    })
+    let frontCard = document.createElement('div')
+    let backCard = document.createElement('div')
+    let name = document.createElement('p')
+    let gender = document.createElement('p')
+    let party = document.createElement('p')
+    name.textContent = `Name: ${senator.first_name} ${senator.last_name}`
+    gender.textContent = `Gender: ${senator.gender}`
+    party.textContent = `Party: ${senator.party}`
+    backCard.appendChild(name)
+    backCard.appendChild(gender)
+    backCard.appendChild(party)
+    cardDiv.className = "card"
+    frontCard.className = "card__face card__face--front"
+    backCard.className = "card__face card__face--back"
+    let frontImg = document.createElement('img')
+    frontImg.src = senator.imgURL
+    frontCard.appendChild(frontImg)
 
+
+    // now, add the front and back cards to the containing div
+    cardDiv.appendChild(frontCard)
+    cardDiv.appendChild(backCard)
+    pictureDiv.appendChild(cardDiv)
+
+
+});
 
 //CREATE SENATOR CARD
 
