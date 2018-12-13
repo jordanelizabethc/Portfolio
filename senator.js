@@ -6,8 +6,6 @@ import { senatorData } from './assets/senators.js'
 
 const senators = senatorData[0].results[0].members
 
-// console.log(senators)
-
 const republicans = senators.filter(senator => senator.party === "R")
 const democrats = senators.filter(senator => senator.party === "D")
 
@@ -63,6 +61,8 @@ senWithPics.forEach(senator => {
     let frontImg = document.createElement('img')
     frontImg.src = senator.imgURL
     frontCard.appendChild(frontImg)
+
+    // SORT BACKCARD/BORDER COLOR
     if (senator.party === `R`) {
         frontImg.style.border = "thick solid #8E1600";
     } else if (senator.party === `D`) {
