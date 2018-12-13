@@ -64,19 +64,19 @@ senWithPics.forEach(senator => {
     frontImg.src = senator.imgURL
     frontCard.appendChild(frontImg)
     if (senator.party === `R`) {
-        frontImg.style.border = "thick solid red";
+        frontImg.style.border = "thick solid #8E1600";
     } else if (senator.party === `D`) {
-        frontImg.style.border = "thick solid blue";
+        frontImg.style.border = "thick solid #222D65";
     } else {
-        frontImg.style.border = "thick solid green"
+        frontImg.style.border = "thick solid #384e1d"
     }
 
 
 
     if (senator.party === `R`) {
-        backCard.style.backgroundColor = "red"
+        backCard.style.backgroundColor = " #8E1600"
     } else if (senator.party === `D`) {
-        backCard.style.backgroundColor = "blue"
+        backCard.style.backgroundColor = "#222D65"
     } else {
         backCard.style.backgroundColor = "#384e1d"
     }
